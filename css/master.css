@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
 }
 
 
@@ -34,12 +35,22 @@ main{
 /* blocco centrale */
 
 .upgrade{
-  background-color: #ccc;
+  /* background-color: #ccc; */
   height: 80px;
   /* position: fixed; */
   top: 0;
   left: 0;
   z-index: 999;
+}
+
+.upgrade ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.upgrade li{
+  list-style-type: none;
 }
 
 .content{
@@ -54,11 +65,14 @@ main{
 
 /* ul */
 
+
+
 .playlist{
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  /* width: 100%;
+  height: auto; */
 }
 
 .playlist p{
@@ -67,7 +81,9 @@ main{
 
 .playlist li{
   list-style-type: none;
-  padding-right: 0.5%
+  padding-right: 0.5%;
+  width: 100%;
+  height: auto;
 }
 
 .playlist li img{
