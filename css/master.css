@@ -5,6 +5,10 @@
   font-family: 'Varela Round', sans-serif;
 }
 
+h1{
+  padding-top: 2%
+}
+
 h4{
   text-align: center;
   padding-bottom: 5%
@@ -18,19 +22,33 @@ p{
 
 /* header */
 header{
-;
   background-color: lightgrey
 }
 
 .barra-fixed{
-  background-color: #ccc;
+  background-color: black;
+  opacity: 0.4;
   width: calc(100% - 230px);
+  height: 80px;
   position: fixed;
   top: 0;
   left: 230px;
   z-index: 999;
   display: flex;
   justify-content: flex-end;
+}
+
+button{
+  width: 20%;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  margin: 2% 2%;
+  transition: all 1s;
+}
+
+button:hover{
+  transform: scale(1.1);
 }
 
 
@@ -44,7 +62,7 @@ main{
 
 #wrapper{
   width: 100%;
-  /* height: 100vh; */
+  /* height: 100vh;  */
   background-color: black;
 }
 
@@ -59,19 +77,41 @@ main{
   width: 230px;
   height: 100%;
   min-height: 480px;
+  padding-left: 1%;
+
 }
 
 #logo{
   width: 50%;
-  margin: 2% 2%;
+  margin: 8% 0;
 }
 
 .main-nav li img{
   width: 9%
 }
 
+
 li{
+  color: white;
+  list-style-type: none;
+}
+
+.home a{
+  text-decoration: none;
+  color: grey;
+}
+
+.home a:hover{
   color: white
+}
+
+.crea-playlist a{
+  text-decoration: none;
+  color: grey;
+}
+
+.crea-playlist a:hover{
+  color: white;
 }
 
 /* blocco centrale */
@@ -79,12 +119,60 @@ li{
 
 .upgrade ul{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  height: 112px;
 }
 
 .upgrade li{
   list-style-type: none;
+  padding-right: 2%;
+  font-size: 0.8rem;
+}
+
+.linea-verde{
+  border: 1px solid green;
+  width: 45px;
+  position: absolute;
+  left: 37%;
+  top: 28%;
+}
+
+.menu a{
+  text-decoration: none;
+  color: grey;
+}
+
+.menu a:hover{
+  color: white;
+}
+
+.crea-playlist{
+  padding-top: 6%;
+  color: white;
+}
+
+.crea-playlist li{
+  color: grey;
+  padding-bottom: 4%;
+  font-size: 0.8rem;
+
+}
+
+.crea-playlist li:first-child{
+  padding-top: 7%
+}
+
+.profilo{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.profilo img{
+  width: 10%
 }
 
 .content{
@@ -123,6 +211,10 @@ li{
   width: 100%
 }
 
+.playlist li img:hover{
+  opacity: 0.4;
+}
+
 .playlist-personalizzata{
   display: flex;
   justify-content: flex-start;
@@ -139,6 +231,9 @@ li{
   width: 100%
 }
 
+.playlist-personalizzata li img:hover{
+  opacity: 0.4;
+}
 
 .artisti-popolari{
   display: flex;
@@ -155,6 +250,10 @@ li{
 .artisti-popolari li img{
   width: 100%;
   border-radius: 50%;
+}
+
+.artisti-popolari li img:hover{
+  opacity: 0.4;
 }
 
 /*  */

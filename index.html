@@ -24,25 +24,48 @@
 
 <!-- menu fisso a sinistra -->
           <nav class="main-nav">
-            <img id="logo" src="img/logo.svg" alt="logo">
-            <ul>
-              <li><img src="img/home.svg" alt="home"> Home</li>
-              <li><img src="img/search.svg" alt="search"> Cerca </li>
-              <li><img src="img/libreria.svg" alt=""> La tua libreria </li>
+            <a href="#"><img id="logo" src="img/logo.svg" alt="logo"></a> 
+            <ul class="home">
+              <li><img src="img/home.svg" alt="home"><a href="#"> Home</a></li>
+              <li><img src="img/search.svg" alt="search"><a href="#">Cerca</a></li>
+              <li><img src="img/libreria.svg" alt=""><a href="#">La tua libreria</a></li>
             </ul>
+            <div class="crea-playlist">
+              PLAYLIST
+              <ul class="nome-playlist">
+                <li> <a href="#">Crea Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
+            </div>
+
+            <div class="profilo">
+              <span><img src="img/download.svg" alt="download">Installa app</span>
+              <hr>
+              <span><img src="img/profile.svg" alt="profile">John Doe</span>
+
+            </div>
           </nav>
+
+
 
 <!-- blocco centrale  -->
           <section class="content">
             <div class="upgrade">
-              <ul>
-                <li>IN EVIDENZA</li>
-                <li>PODCAST</li>
-                <li>CLASSIFICHE</li>
-                <li>GENERI E MOOD</li>
-                <li>NUOVE USCITE</li>
-                <li>SCOPRI</li>
+              <ul class="menu">
+                <li><a href="#">IN EVIDENZA</a></li>
+                <li><a href="#">PODCAST</a></li>
+                <li><a href="#">CLASSIFICHE</a></li>
+                <li><a href="#">GENERI E MOOD</a></li>
+                <li><a href="#">NUOVE USCITE</a></li>
+                <li><a href="#">SCOPRI</a></li>
               </ul>
+              <div class="linea-verde"></div>
             </div>
             <div id="menu-playlist">
               <div class="recently">
@@ -69,8 +92,8 @@
               <div class="artisti">
                 <h1>Artisti più popolari</h1>
                 <ul class="artisti-popolari">
-                  <li><img src="img/youg.jpeg" alt="youg"></li>
-                  <li><img src="img/einaudi.jpeg" alt="einaudi"></li>
+                  <li><img src="img/youg.jpeg" alt="youg"> <h4>Lana del Rey</h4> </li>
+                  <li><img src="img/einaudi.jpeg" alt="einaudi"> <h4>Ludovico Einaudi</h4> </li>
                 </ul>
               </div>
             </div>
