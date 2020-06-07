@@ -271,3 +271,60 @@ footer{
   width: 100%;
   height: 100%;
 }
+
+.nome-brano h2{
+  display: inline-block;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.nome-brano p{
+  font-size: 0.7rem;
+}
+
+.imm-brano img{
+  width: 10%;
+  margin: 2% 1%;
+}
+
+.imm-brano{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icone{
+  width: 20%;
+  color: grey;
+  margin-left: 9%;
+}
+
+.icone i{
+  margin-right: 7%;
+}
+
+.barra-scorrimento{
+  width: 20%;
+}
+
+.barra-scorrimento i{
+  color: white;
+  margin-right: 8%
+}
+
+.linea-musica{
+  text-align: center;
+  height: 3px;
+  background-color: white;
+}
+
+.barra-volume{
+  width: 20%;
+}
+
+.barra-volume i{
+  font-size: 0.8rem;
+  color: white;
+  margin-right: 8%
+}
