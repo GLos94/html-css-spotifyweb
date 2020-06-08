@@ -155,11 +155,14 @@ li{
   padding-top: 7%
 }
 
+.grey-icon{
+  background-color: grey;
+  border-color: transparent;
+}
+
 .nome-playlist i{
   font-size: 2rem;
-  background-color: grey;
   color: black;
-  border-color: transparent;
 }
 
 
@@ -227,18 +230,12 @@ li{
 }
 
 .upgrade li{
+  width: 12%;
   list-style-type: none;
   padding-right: 2%;
   font-size: 0.8rem;
 }
 
-.linea-verde{
-  border: 1px solid green;
-  width: 45px;
-  position: relative;
-  left: 24%;
-  top: 28%;
-}
 
 .menu a{
   text-decoration: none;
@@ -247,6 +244,7 @@ li{
 
 .menu a:hover{
   color: white;
+  border-bottom: 1px solid green;
 }
 
 
@@ -287,9 +285,27 @@ li{
   width: 100%;
 }
 
-
 .playlist li img:hover{
   opacity: 0.4;
+}
+
+.plus-hover{
+  position: relative;
+}
+
+
+.plus-hover i{
+  font-size: 4rem;
+  color: lightgrey;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plus-hover i:hover{
+  display: block;
 }
 
 /* #overlay {
@@ -479,7 +495,8 @@ i{
 .linea-volume{
   width: 30%;
   height: 2px;
-  background-color: white;
+  color: white;
+  background-color: rgb(255,255,255);
 }
 
 
