@@ -25,6 +25,7 @@
 
 <!-- menu fisso a sinistra -->
           <nav class="main-nav">
+            <div class="logo-icone-principali">
             <a href="#"><img id="logo" src="img/logo.svg" alt="logo"></a>
             <ul class="home">
               <li><img src="img/home.svg" alt="home"><a href="#"> Home</a></li>
@@ -34,7 +35,7 @@
             <div class="crea-playlist">
               PLAYLIST
               <ul class="nome-playlist">
-                <li> <a href="#">Crea Playlist</a></li>
+                <li><a href="#"><i class="far fa-plus-square"></i>Crea Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
                 <li><a href="#">Nome Playlist</a></li>
@@ -45,10 +46,18 @@
               </ul>
             </div>
 
+            </div>
+
             <div class="profilo">
-              <span><img src="img/download.svg" alt="download">Installa app</span>
-              <hr>
-              <span><img src="img/profile.svg" alt="profile">John Doe</span>
+              <div class="prima-riga-profilo">
+                <img id="download" src="img/download.svg" alt="download"><span>Installa app</span>
+              </div>
+              <div class="linea-divisoria">
+
+              </div>
+              <div class="seconda-riga-profilo">
+                <img id="omino" src="img/profile.svg" alt="profile"><span>John Doe</span>
+              </div>
             </div>
           </nav>
 
@@ -91,6 +100,7 @@
               </div>
               <div class="artisti">
                 <h1>Artisti più popolari</h1>
+                <p>Più ascolti, più accurati saranno i suggerimenti</p>
                 <ul class="artisti-popolari">
                   <li><img src="img/youg.jpeg" alt="youg"> <h4>Lana del Rey</h4> </li>
                   <li><img src="img/einaudi.jpeg" alt="einaudi"> <h4>Ludovico Einaudi</h4> </li>
@@ -106,46 +116,36 @@
 
 <!-- footer -->
       <footer>
+
         <section id="player">
-            <div class="imm-brano">
-              <img src="img/sinister.jpeg" alt="sinister">
-              <div class="nome-brano">
-                <h2>Sinister</h2>
-                <p>Brano nome</p>
-              </div>
-              <div class="icone">
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
-              </div>
+          <div class="col33 brano">
+            <img class="imm-brano" src="img/sinister.jpeg" alt="sinister">
+            <span> <h2>Sinister</h2><p>Brano nome</p> </span>
+            <span class="icone"><i class="far fa-heart"></i>
+            <i class="far fa-folder"></i></span>
+          </div>
+          <div class="col33 play">
+            <div class="icone-play">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo-alt"></i>
             </div>
-
-
-            <div class="barra-scorrimento">
-              <i class="fas fa-random"></i>
-              <i class="fas fa-step-backward"></i>
-              <i class="far fa-play-circle"></i>
-              <i class="fas fa-step-forward"></i>
-              <i class="fas fa-redo-alt"></i>
-              <div class="linea-musica">
-
-              </div>
+            <div class="riproduzione">
+              <span>0.25</span>
+              <div class="linea-scorrimento"></div>
+              <span>4.35</span>
             </div>
-
-
-
-
-            <div class="barra-volume">
-              <i class="fas fa-bars"></i>
-              <i class="fas fa-tv"></i>
-              <i class="fas fa-volume-up"></i>
-            </div>
-            <div class="linea-volume">
-
-            </div>
-
-
-
+          </div>
+          <div class="col33 volume">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-tv"></i>
+            <i class="fas fa-volume-up"></i>
+            <span class="linea-volume"></span>
+          </div>
         </section>
+
 
       </footer>
 
