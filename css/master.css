@@ -158,11 +158,13 @@ li{
 .grey-icon{
   background-color: grey;
   border-color: transparent;
+  padding: 2% 2%;
 }
 
 .nome-playlist i{
   font-size: 2rem;
   color: black;
+  
 }
 
 
@@ -304,27 +306,11 @@ li{
   transform: translate(-50%, -50%);
 }
 
-.plus-hover i:hover{
+.plus-hover:hover i{
   display: block;
 }
 
-/* #overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-}
 
-#overlay:hover{
-  display: block;
-} */
 
 .john-doe p{
   padding-left: 1%;
@@ -473,7 +459,13 @@ footer{
   width: 95%;
   height: 2px;
   margin: 2% 4%;
+  background-color: grey;
+}
+
+.secondi{
   background-color: white;
+  height: 2px;
+  width: 25%;
 }
 
 .volume i{
@@ -495,8 +487,13 @@ i{
 .linea-volume{
   width: 30%;
   height: 2px;
-  color: white;
-  background-color: rgb(255,255,255);
+  background-color: grey;
+}
+
+.altezza-vol{
+  background-color: white;
+  height: 2px;
+  width: 15%;
 }
 
 
