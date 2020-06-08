@@ -62,7 +62,7 @@ main{
 
 #wrapper{
   width: 100%;
-  /* height: 100vh;  */
+  /* height: 100vh;   */
   background-color: black;
 }
 
@@ -178,7 +178,7 @@ li{
 .content{
   float: left;
   width: calc(100% - 230px);
-  /* height: 100%; */
+  height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #141922;
@@ -295,7 +295,7 @@ footer{
 }
 
 .icone{
-  width: 20%;
+  width: 30%;
   color: grey;
   margin-left: 9%;
 }
@@ -304,8 +304,9 @@ footer{
   margin-right: 7%;
 }
 
+
 .barra-scorrimento{
-  width: 20%;
+  width: 40%;
 }
 
 .barra-scorrimento i{
@@ -314,17 +315,30 @@ footer{
 }
 
 .linea-musica{
-  text-align: center;
+  width: 44%;
   height: 3px;
   background-color: white;
+  position: absolute;
+  top:auto;
+  left: 21%;
 }
 
+
 .barra-volume{
-  width: 20%;
+  width: 5%;
 }
 
 .barra-volume i{
   font-size: 0.8rem;
   color: white;
   margin-right: 8%
+}
+
+
+.linea-volume{
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+  height: 3px;
+  background-color: white;
 }
