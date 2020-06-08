@@ -52,11 +52,10 @@ button:hover{
 }
 
 
-
 /* main */
 
 main{
-  height: calc(100% - 90px);
+  height: calc(100vh - 90px);
   overflow: hidden;
 }
 
@@ -133,8 +132,8 @@ li{
 .linea-verde{
   border: 1px solid green;
   width: 45px;
-  position: absolute;
-  left: 37%;
+  position: relative;
+  left: 24%;
   top: 28%;
 }
 
@@ -156,7 +155,6 @@ li{
   color: grey;
   padding-bottom: 4%;
   font-size: 0.8rem;
-
 }
 
 .crea-playlist li:first-child{
@@ -168,7 +166,11 @@ li{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
 
+.profilo span{
+  flex-direction: column;
+  align-self: flex-end;
 }
 
 .profilo img{
