@@ -42,7 +42,7 @@ header{
 }
 
 button{
-  width: 20%;
+  min-width: 20%;
   background-color: black;
   color: white;
   border-radius: 20px;
@@ -88,6 +88,9 @@ li{
 
 /* regole main-nav */
 
+.hamburger{
+  display: none;
+}
 
 .main-nav{
   float: left;
@@ -289,7 +292,23 @@ li{
   opacity: 0.4;
 }
 
+/* #overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
 
+#overlay:hover{
+  display: block;
+} */
 
 .john-doe p{
   padding-left: 1%;
@@ -466,3 +485,105 @@ i{
 
 
 /* regole responsiveness */
+
+@media screen and (max-width: 768px) {
+  .upgrade ul{
+    flex-wrap: wrap;
+    padding-top: 15%;
+    height: 145px;
+  }
+
+  .upgrade li{
+    min-width: 20%;
+  }
+
+  .playlist{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: 1%;
+  }
+
+  .playlist li{
+    width: 22%;
+    margin-right: 3%;
+  }
+
+  .playlist li img{
+    min-width: 110%;
+  }
+
+  .playlist-personalizzata{
+    min-width: 50%;
+  }
+
+  .artisti-popolari{
+    min-width: 50%;
+  }
+
+}
+
+@media screen and (max-width:420px) {
+
+  .barra-fixed{
+    width: calc(100% - 40px);
+    left: 40px;
+  }
+
+  .main-nav{
+    width: 40px
+  }
+
+  .logo-icone-principali{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger a img{
+    width: 60%;
+    padding-top: 12%;
+  }
+
+  .content{
+    width: calc(100% - 40px)
+  }
+
+  .crea-playlist{
+    display: none
+  }
+
+  .upgrade ul{
+    flex-wrap: wrap;
+    padding-top: 15%;
+    height: 145px;
+  }
+
+  .upgrade li{
+    min-width: 20%;
+  }
+
+  .playlist{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: 1%;
+  }
+
+  .playlist li{
+    width: 44%;
+    margin-right: 6%;
+  }
+
+  .playlist li img{
+    min-width: 110%;
+  }
+
+  .playlist-personalizzata{
+    min-width: 100%;
+  }
+
+  .artisti-popolari{
+    min-width: 100%;
+  }
+}
