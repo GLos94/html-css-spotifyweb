@@ -506,14 +506,18 @@ i{
 
 /* regole responsiveness */
 
-@media screen and (max-width: 768px) {
+
+@media screen (min-width:769px) and (max-width:1024px){
   .upgrade ul{
-    min-width: 22%;
     flex-wrap: wrap;
     padding-top: 15%;
     height: 145px;
   }
 
+  
+  .hamburger{
+    display: none;
+  }
 
   .playlist{
     justify-content: flex-start;
@@ -540,39 +544,19 @@ i{
 
 }
 
-@media screen and (min-width:421px) {
+
+
+
+@media screen and (max-width: 768px) {
   .upgrade ul{
-    min-width: 20%;
-  }
-
-  .barra-fixed{
-    width: calc(100% - 40px);
-    left: 40px;
-  }
-
-  .main-nav{
-    width: 40px
-  }
-
-  .logo-icone-principali{
-    display: none;
+    min-width: 22%;
+    flex-wrap: wrap;
+    padding-top: 15%;
+    height: 145px;
   }
 
   .hamburger{
-    display: block;
-  }
-
-  .hamburger a img{
-    width: 60%;
-    padding-top: 12%;
-  }
-
-  .content{
-    width: calc(100% - 40px)
-  }
-
-  .crea-playlist{
-    display: none
+    display: none;
   }
 
   .playlist{
@@ -582,8 +566,8 @@ i{
   }
 
   .playlist li{
-    width: 44%;
-    margin-right: 6%;
+    width: 22%;
+    margin-right: 3%;
   }
 
   .playlist li img{
@@ -591,15 +575,16 @@ i{
   }
 
   .playlist-personalizzata{
-    min-width: 100%;
+    min-width: 50%;
   }
 
   .artisti-popolari{
-    min-width: 100%;
+    min-width: 50%;
   }
 
-
 }
+
+
 
 @media screen and (max-width:420px) {
 
@@ -609,7 +594,7 @@ i{
   }
 
   .main-nav{
-    width: 40px
+    width: 40px;
   }
 
   .logo-icone-principali{
