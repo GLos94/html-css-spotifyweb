@@ -100,6 +100,7 @@ li{
   padding-left: 1%;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-scrollbar: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -128,8 +129,9 @@ li{
 }
 
 .home a:hover{
-  color: white
+  color: white;
 }
+
 
 .crea-playlist a{
   text-decoration: none;
@@ -161,6 +163,10 @@ li{
   background-color: grey;
   border-color: transparent;
   padding: 2% 2%;
+}
+
+.nome-playlist{
+  height: 100px;
 }
 
 .nome-playlist i{
@@ -233,7 +239,7 @@ li{
 }
 
 .upgrade li{
-  width: 12%;
+  min-width: 12%;
   list-style-type: none;
   padding-right: 2%;
   font-size: 0.8rem;
@@ -298,7 +304,7 @@ li{
 
 
 .plus-hover i{
-  font-size: 4rem;
+  font-size: 3rem;
   color: lightgrey;
   display: none;
   position: absolute;
@@ -310,7 +316,6 @@ li{
 .plus-hover:hover i{
   display: block;
 }
-
 
 
 .john-doe p{
@@ -503,14 +508,12 @@ i{
 
 @media screen and (max-width: 768px) {
   .upgrade ul{
+    min-width: 22%;
     flex-wrap: wrap;
     padding-top: 15%;
     height: 145px;
   }
 
-  .upgrade li{
-    min-width: 20%;
-  }
 
   .playlist{
     justify-content: flex-start;
@@ -534,6 +537,67 @@ i{
   .artisti-popolari{
     min-width: 50%;
   }
+
+}
+
+@media screen and (min-width:421px) {
+  .upgrade ul{
+    min-width: 20%;
+  }
+
+  .barra-fixed{
+    width: calc(100% - 40px);
+    left: 40px;
+  }
+
+  .main-nav{
+    width: 40px
+  }
+
+  .logo-icone-principali{
+    display: none;
+  }
+
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger a img{
+    width: 60%;
+    padding-top: 12%;
+  }
+
+  .content{
+    width: calc(100% - 40px)
+  }
+
+  .crea-playlist{
+    display: none
+  }
+
+  .playlist{
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    min-width: 1%;
+  }
+
+  .playlist li{
+    width: 44%;
+    margin-right: 6%;
+  }
+
+  .playlist li img{
+    min-width: 110%;
+  }
+
+  .playlist-personalizzata{
+    min-width: 100%;
+  }
+
+  .artisti-popolari{
+    min-width: 100%;
+  }
+
 
 }
 
@@ -570,14 +634,12 @@ i{
   }
 
   .upgrade ul{
+    min-width: 19%;
     flex-wrap: wrap;
     padding-top: 15%;
     height: 145px;
   }
 
-  .upgrade li{
-    min-width: 20%;
-  }
 
   .playlist{
     justify-content: flex-start;
