@@ -64,7 +64,7 @@ main{
 
 #wrapper{
   width: 100%;
-  /* height: 100vh;   */
+  height: 100%;
   background-color: black;
 }
 
@@ -120,6 +120,12 @@ li{
   align-items: center;
 }
 
+.linea-icone{
+  width: 1%;
+  height: 20px;
+  border-left: 2px solid green;
+}
+
 .home a{
   text-decoration: none;
   color: grey;
@@ -142,10 +148,6 @@ li{
 .crea-playlist{
   padding-top: 6%;
   color: white;
-  height: 200px;
-  overflow-x: hidden;
-  overflow-y: auto;
-
 }
 
 .crea-playlist li{
@@ -160,15 +162,18 @@ li{
   padding-top: 7%
 }
 
+.crea-playlist ul{
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .grey-icon{
   background-color: grey;
   border-color: transparent;
   padding: 2% 2%;
 }
 
-.nome-playlist{
-  height: 100px;
-}
 
 .nome-playlist i{
   font-size: 1rem;
@@ -232,6 +237,7 @@ li{
 /* regole blocco centrale */
 
 
+
 .upgrade ul{
   display: flex;
   justify-content: center;
@@ -247,6 +253,20 @@ li{
 }
 
 
+.menu #selezione{
+  position: relative;
+}
+
+.linea-verde{
+  width: 22%;
+  height: 2px;
+  position: absolute;
+  top: 21px;
+  left: 29px;
+  background-color: green;
+}
+
+
 .menu a{
   text-decoration: none;
   color: grey;
@@ -254,7 +274,6 @@ li{
 
 .menu a:hover{
   color: white;
-  border-bottom: 1px solid green;
 }
 
 
@@ -265,7 +284,7 @@ li{
 .content{
   float: left;
   width: calc(100% - 230px);
-  height: 100vh;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: #141922;
@@ -481,8 +500,16 @@ footer{
 }
 
 i{
-  color: white;
-  font-size: 0.8rem;
+  color: grey;
+  font-size: 1rem;
+}
+
+i:hover{
+  color: white
+}
+
+.fa-play-circle{
+  font-size: 1.4rem;
 }
 
 .volume{
@@ -514,7 +541,6 @@ i{
     padding-top: 15%;
     height: 145px;
   }
-
 
   .hamburger{
     display: none;
@@ -548,7 +574,7 @@ i{
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   .upgrade ul{
     min-width: 22%;
     flex-wrap: wrap;
@@ -648,5 +674,9 @@ i{
 
   .artisti-popolari{
     min-width: 100%;
+  }
+
+  .col33{
+    padding: 0 2%;
   }
 }
